@@ -1,18 +1,19 @@
+import {memo} from 'react'
+
 const Footer = () => {
     return (
-      
         <footer className="w-full" > 
             <div className="container mx-auto px-4 py-12 md:py-16">
-                <div className="grid grid-cols-12 gap-8 mb-8" >
-                    <div className="col-span-6" >
-                        <img  src={ require('../../../../assets/user/images/img_person1.jpg') } alt=""
-                            className="rounded-full w-14 h-14 object-cover mb-4"
+                <div className="grid grid-cols-2 gap-8 mb-8" >
+                    <div className="col-span-1" >
+                        <img  src={ require('../../assets/user/images/img_person1.jpg') } alt=""
+                            className="rounded-full w-10 h-10 object-cover mb-4"
                         />
                         <p className="text-xl text-gray-400 " >
                         Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.
                         </p>
                     </div>
-                    <div className="col-span-6 grid grid-cols-3 gap-4" >
+                    <div className="col-span-1 grid grid-cols-3 gap-4" >
                         <div className="" >
                             <h6 className="text-white " >Products</h6>
                             <ul>
@@ -20,44 +21,57 @@ const Footer = () => {
                                     <a href="" className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out" >Web Studio</a>
                                 </li>
                                 <li className="mb-1" >
-                                    <a href="" className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out" >Web Studio</a>
+                                    <a href="" className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out" >DynamicBox Flex</a>
                                 </li>
                                 <li className="mb-1" >
-                                    <a href="" className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out" >Web Studio</a>
+                                    <a href="" className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out" >Programming Forms</a>
                                 </li>
                             </ul>
                         </div>
                         <div className="" >
-                            <h6 className="text-white" >Products</h6>
+                            <h6 className="text-white" >Resources</h6>
                             <ul>
                                 <li className="mb-1" >
-                                    <a href="" className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out" >Web Studio</a>
+                                    <a href="" className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out" >Nostrud exercitation</a>
                                 </li>
                                 <li className="mb-1" >
-                                    <a href="" className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out" >Web Studio</a>
+                                    <a href="" className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out" >Visual mockups</a>
                                 </li>
                                 <li className="mb-1" >
-                                    <a href="" className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out" >Web Studio</a>
+                                    <a href="" className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out" >Nostrud exercitation</a>
+                                </li>
+                                <li className="mb-1" >
+                                    <a href="" className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out" >Visual mockups</a>
+                                </li>
+                                <li className="mb-1" >
+                                    <a href="" className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out" >Nostrud exercitation</a>
                                 </li>
                             </ul>
                         </div>
                         <div className="" >
-                            <h6 className="text-white" >Products</h6>
+                            <h6 className="text-white" >Company</h6>
                             <ul>
                                 <li className="mb-1" >
-                                    <a href="" className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out" >Web Studio</a>
+                                    <a href="" className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out" >Consectetur adipiscing</a>
                                 </li>
                                 <li className="mb-1" >
-                                    <a href="" className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out" >Web Studio</a>
+                                    <a href="" className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out" >Labore et dolore</a>
                                 </li>
                                 <li className="mb-1" >
-                                    <a href="" className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out" >Web Studio</a>
+                                    <a href="" className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out" >Consectetur adipiscing</a>
                                 </li>
+                                <li className="mb-1" >
+                                    <a href="" className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out" >Labore et dolore</a>
+                                </li>
+                                <li className="mb-1" >
+                                    <a href="" className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out" >Consectetur adipiscing</a>
+                                </li>
+                                
                             </ul>
                         </div>
                     </div>
                 </div>
-                <div className=" flex justify-between" >
+                <div className="flex justify-between" >
                 <div className="text-white" > &#169; HoangNam.com. All rights reserved.</div>
                 <ul className="flex mb-4 md:order-1 md:ml-4 md:mb-0" >
                 <li><a class="flex justify-center items-center text-purple-600 bg-gray-800 hover:text-gray-100 hover:bg-purple-600 rounded-full transition duration-150 ease-in-out" aria-label="Twitter" href="/"><svg class="w-8 h-8 fill-current" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="m13.063 9 3.495 4.475L20.601 9h2.454l-5.359 5.931L24 23h-4.938l-3.866-4.893L10.771 23H8.316l5.735-6.342L8 9h5.063Zm-.74 1.347h-1.457l8.875 11.232h1.36l-8.778-11.232Z"></path></svg></a></li>
@@ -73,4 +87,4 @@ const Footer = () => {
       
     );
   };
-  export default Footer;
+  export default memo(Footer);

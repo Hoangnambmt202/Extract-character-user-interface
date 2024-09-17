@@ -1,14 +1,16 @@
+import React from 'react'
 import video from "../../../assets/user/video/homepageVideo.mp4";
 import features1 from '../../../assets/user/images/features-03-image-01.webp'
 
 
+
 const HomePage = () => {
   return (
-    <main className="w-full">
+   <>
       <section>
         <div className="container grid  mx-auto px-4  pb-10">
           <div className="max-w-3xl mx-auto pt-24 pb-10">
-            <h1 className="text-5xl font-bold text-center title  text-white mb-4">
+            <h1 className="text-5xl font-bold text-center title text-white mb-4">
               Extract and store characters easily
             </h1>
             <h3 className="text-xl sub-title text-center text-white mb-8">
@@ -17,13 +19,13 @@ const HomePage = () => {
             </h3>
             <div className="flex justify-center">
               <a
-                href={{}}
+                href={""}
                 className="inline-block mx-2 px-6 py-3 rounded-lg bg-indigo-600 text-white"
               >
                 Start free trial
               </a>
               <a
-                href={{}}
+                href={""}
                 className="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold mx-2 py-3 px-6 rounded-lg inline-flex items-center"
               >
                 Learn more
@@ -36,7 +38,7 @@ const HomePage = () => {
         </div>
       </section>
       <section>
-        <div className="container grid mx-auto px-4 pb-10">
+        <div className="container mx-auto px-4 pb-10">
           <div className="max-w-3xl mx-auto pt-24 pb-10">
             <h1 className="text-5xl font-bold text-center title  text-white mb-4">
               The majority our customers do not understand their workflows.
@@ -180,8 +182,8 @@ const HomePage = () => {
             </h3>
           </div>
           <div className="grid gap-20">
-            <div className="grid grid-cols-12 " >
-              <div className="information col-span-6 px-4" >
+            <div className="grid grid-cols-2 " >
+              <div className="col-span-1 px-4" >
                 <p className="font-['Handlee'] text-indigo-600 " >More speed. Less spend</p>
                 <h3 className="title text-3xl text-white font-bold mb-6" >Keep projects on schedule</h3>
                 <p className="subtitle text-xl text-gray-400 mb-6 " >
@@ -203,16 +205,16 @@ const HomePage = () => {
                 </ul>
 
               </div>
-              <div className="col-span-6" >
+              <div className="col-span-1" >
                 <img src={features1} alt="" />
               </div>
 
             </div>
-            <div className="grid grid-cols-12 " >
-              <div className="col-span-6" >
+            <div className="grid grid-cols-2 " >
+              <div className="col-span-1" >
                 <img src={features1} alt="" />
               </div>
-              <div className="information col-span-6 px-4" >
+              <div className="col-span-1 px-4" >
                 <p className="font-['Handlee'] text-indigo-600 " >More speed. Less spend</p>
                 <h3 className="title text-3xl text-white font-bold mb-6" >Keep projects on schedule</h3>
                 <p className="subtitle text-xl text-gray-400 mb-6 " >
@@ -236,8 +238,8 @@ const HomePage = () => {
               </div>
               
             </div>
-            <div className="grid grid-cols-12 " >
-              <div className="information col-span-6 px-4" >
+            <div className="grid grid-cols-2 " >
+              <div className="col-span-1 px-4" >
                 <p className="font-['Handlee'] text-indigo-600 " >More speed. Less spend</p>
                 <h3 className="title text-3xl text-white font-bold mb-6" >Keep projects on schedule</h3>
                 <p className="subtitle text-xl text-gray-400 mb-6 " >
@@ -259,7 +261,7 @@ const HomePage = () => {
                 </ul>
 
               </div>
-              <div className="col-span-6" >
+              <div className="col-span-1" >
                 <img src={features1} alt="" />
               </div>
 
@@ -277,8 +279,8 @@ const HomePage = () => {
                 Vitae aliquet nec ullamcorper sit amet risus nullam eget felis semper quis lectus nulla at volutpat diam ut venenatis tellus—in ornare.
               </h3>
           </div>
-          <div className="grid grid-cols-12 gap-6" >
-            <div className="col-span-4 p-4 min-h-80 bg-zinc-800" >
+          <div className="grid grid-cols-3 gap-6" >
+            <div className="col-span-1 p-4 min-h-80 bg-zinc-800" >
               
               <img  src={ require('../../../assets/user/images/img_person1.jpg') }
                     className="rounded-full w-14 h-14 object-cover mb-3"
@@ -291,7 +293,7 @@ const HomePage = () => {
               </address>
 
             </div>
-            <div className="col-span-4 p-4 min-h-80 bg-zinc-800" >
+            <div className="col-span-1 p-4 min-h-80 bg-zinc-800" >
               
               <img  src={ require('../../../assets/user/images/img_person2.jpg') }
                     className="rounded-full w-14 h-14 object-cover mb-3"
@@ -304,7 +306,7 @@ const HomePage = () => {
               </address>
 
             </div>
-            <div className="col-span-4 p-4 min-h-80 bg-zinc-800" >
+            <div className="col-span-1 p-4 min-h-80 bg-zinc-800" >
               
               <img  src={ require('../../../assets/user/images/img_person1.jpg') }
                     className="rounded-full w-14 h-14 object-cover mb-3"
@@ -321,7 +323,9 @@ const HomePage = () => {
           </div>
         </div>
       </section>
-    </main>
+    </>
   );
 };
 export default HomePage;
+
+
